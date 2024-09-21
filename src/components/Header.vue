@@ -8,7 +8,7 @@
           <img src="@/assets/img/location.svg" alt="Location" />
           <span>Krsk</span>
         </a>
-        <a href="">Shop</a>
+        <a href="">Shop1</a>
       </div>
       <div class="header__phone">
         <a href="tel:+12312">12312</a>
