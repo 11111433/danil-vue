@@ -8,9 +8,23 @@
           <img src="@/assets/img/location.svg" alt="Location" />
           <span>Krsk</span>
         </a>
-        <a href="">Shop1</a>
+        <a href="">Shop</a>
+        <a href=""
+          ><span>Customers</span
+          ><img src="@/assets/img/Vector.svg" alt="Arrow" />
+        </a>
+        <a href=""
+          ><span>Company</span><img src="@/assets/img/Vector.svg" alt="Arrow"
+        /></a>
+        <a href=""
+          ><span>Organization</span>
+          <img src="@/assets/img/Vector.svg" alt="Arrow" />
+        </a>
+        <a href="">Sale</a>
+        <a href="">Article</a>
+        <a href="">Gift cards</a>
       </div>
-      <div class="header__phone">
+      <div class="header_phone">
         <a href="tel:+12312">12312</a>
       </div>
     </div>
@@ -45,7 +59,11 @@ a {
   /* align-items: center; */
   gap: 24px;
 }
+.header_phone {
+  display: flex;
 
+  margin-right: 193px;
+}
 /* .header__links a {
   margin-right: 24px;
 }
