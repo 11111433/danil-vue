@@ -78,8 +78,6 @@ section {
 }
 
 .section_group {
-  // display: flex;
-  // justify-content: space-evenly;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
