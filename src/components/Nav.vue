@@ -159,7 +159,7 @@ a {
 
 .mobile {
   @media screen and (max-width: $width) {
-    display: block;
+    display: flex;
   }
 }
 </style>

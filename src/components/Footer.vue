@@ -112,6 +112,7 @@ footer {
 
     height: 100%;
     padding: 0 8px;
+    gap: 30px;
   }
 }
 
@@ -121,17 +122,19 @@ a {
   display: flex;
   align-items: center;
   height: 100%;
-  gap: 10px;
+  // gap: 10px;
+  margin: 12px 2px 2px 2px;
 }
 .footer_menu {
-  max-width: calc(360px - 730px);
+  // max-width: calc(360px - 730px);
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  margin: 2px 30px 16px 2px;
+  margin: 2px 2px 16px 2px;
   height: 80%;
   width: 20%;
-  gap: 24px;
+  border: #f2f2f2;
+  // gap: 2px;
 }
 .footer_delete {
   // max-width: calc(360px - 80px);
