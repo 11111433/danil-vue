@@ -39,16 +39,16 @@ import Logo from "./Logo.vue";
       </div>
       <div class="card">
         <a href="">
-          <img style="width: 100%" src="@/assets/img/card.svg" alt="card"
+          <img style="width: 100%" src="@/assets/img/card1.png" alt="card"
         /></a>
         <a href="">
-          <img style="width: 100%" src="@/assets/img/card.svg" alt="card"
+          <img style="width: 100%" src="@/assets/img/card1.png" alt="card"
         /></a>
         <a href="">
-          <img style="width: 100%" src="@/assets/img/card.svg" alt="card"
+          <img style="width: 100%" src="@/assets/img/card1.png" alt="card"
         /></a>
         <a href="">
-          <img style="width: 100%" src="@/assets/img/card.svg" alt="card"
+          <img style="width: 100%" src="@/assets/img/card1.png" alt="card"
         /></a>
       </div>
     </div>
