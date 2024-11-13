@@ -37,19 +37,30 @@ import Logo from "./Logo.vue";
           <span>some thing</span>
         </a>
       </div>
-      <div class="card">
-        <a href="">
-          <img style="width: 100%" src="@/assets/img/card1.png" alt="card"
-        /></a>
-        <a href="">
-          <img style="width: 100%" src="@/assets/img/card1.png" alt="card"
-        /></a>
-        <a href="">
-          <img style="width: 100%" src="@/assets/img/card1.png" alt="card"
-        /></a>
-        <a href="">
-          <img style="width: 100%" src="@/assets/img/card1.png" alt="card"
-        /></a>
+      <div class="card_items">
+        <a class="card_item" href="" v-for="card in 4" :key="card.id">
+          <img style="width: 100%" src="@/assets/img/card1.png" alt="card" />
+          <div class="card_info">
+            <h3 class="card_title">Пила</h3>
+            <div class="card_teg">
+              <p>скидка</p>
+              <p>хит</p>
+              <p>рассрочка</p>
+            </div>
+
+            <div class="card_prices">
+              <div>
+                <h4>Роозичная цена</h4>
+                <span>300 000 руб</span>
+              </div>
+              <div>
+                <h4>Клубная цена</h4>
+                <span>100 000 руб</span>
+              </div>
+            </div>
+            <button class="button_basket">basket</button>
+          </div></a
+        >
       </div>
     </div>
   </section>
@@ -82,6 +93,7 @@ section {
   align-items: center;
   flex-wrap: wrap;
   height: 100%;
+
   border: 16px solid transparent;
   gap: 16px;
 }
@@ -96,22 +108,75 @@ a {
     color: black;
   }
 }
-.card {
-  background: #f4f5f5;
-  display: flex;
-  flex-wrap: nowrap;
-  overflow-x: auto;
 
+.card_items {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card_item {
   border: 16px solid transparent;
-  gap: 4px 30px;
-  @media screen and (max-width: $width) {
-    width: 1920px;
-    height: auto;
+  padding: 0px;
+  &_image {
+    img {
+      width: 100%;
+    }
+  }
+
+  .card_info {
+    .card_title {
+      font-size: 20px;
+      margin-bottom: 12px;
+    }
+    .card_teg {
+      display: flex;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      height: 100%;
+      gap: 8px;
+    }
+    p {
+      width: 40%;
+
+      margin: 4px;
+    }
+    .card_prices {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 40px;
+      gap: 40px;
+      h4 {
+        font-size: 14px;
+        margin: 0px 0px 4px 0px;
+      }
+      span {
+        font-size: 26px;
+      }
+    }
+    .button_basket {
+      margin-top: 16px;
+      background: #ffee00;
+      width: 100%;
+      height: 48px;
+      border: none;
+      border-radius: 4px;
+      padding: 12px 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
   }
 }
 
 .menu {
   background: #ffffff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 
   display: flex;
   justify-content: space-evenly;
