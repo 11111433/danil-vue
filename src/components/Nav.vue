@@ -7,7 +7,10 @@ import Logo from "./Logo.vue";
     <div class="nav_content">
       <div style="display: flex; align-items: center; gap: 12px">
         <Logo class="desktop" />
-        <button class="button_catalog mobile">
+        <button
+          class="button_catalog mobile"
+          @click="() => console.log('click')"
+        >
           <span />
           Catalog
         </button>
@@ -92,6 +95,7 @@ nav {
   display: flex;
   align-items: center;
   gap: 2px;
+  cursor: pointer;
 
   span {
     position: relative;

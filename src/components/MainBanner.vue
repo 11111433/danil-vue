@@ -3,7 +3,7 @@ import Logo from "./Logo.vue";
 </script>
 
 <template>
-  <footer>
+  <section>
     <div class="footer_content">
       <div class="footer_menu desktop">
         <h1>Популярные категории</h1>
@@ -87,7 +87,7 @@ import Logo from "./Logo.vue";
         </div>
       </div>
     </div>
-  </footer>
+  </section>
 </template>
 
 <style scoped lang="scss">
@@ -97,7 +97,7 @@ import Logo from "./Logo.vue";
 
 $width: 1000px;
 
-footer {
+section {
   background: #ffffff;
 
   @media screen and (max-width: $width) {

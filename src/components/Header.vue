@@ -77,8 +77,6 @@ a {
 }
 .header_phone {
   display: flex;
-
-  margin-right: 193px;
 }
 /* .header__links a {
   margin-right: 24px;
